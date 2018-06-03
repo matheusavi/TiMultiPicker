@@ -1,0 +1,8 @@
+{
+	"id": "br.spyker0.multipicker",
+	"name": "br.spyker0.multipicker",
+	"description" : "Simple way to select multiple items from a list",
+	"author": "spyker0",
+	"version": "0.1",
+	"platforms":"android,ios"
+}
