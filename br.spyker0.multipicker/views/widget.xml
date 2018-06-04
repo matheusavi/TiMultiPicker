@@ -1,7 +1,8 @@
 <Alloy>
-    <Window id='win'>
-        <Label id='title' />
-        <TableView id='tableView'>
-        </TableView>
+    <Window id="win">
+        <View id="container">
+            <Label id="title" platform="android" />
+            <TableView id="tableView" />
+        </View>
     </Window>
 </Alloy>

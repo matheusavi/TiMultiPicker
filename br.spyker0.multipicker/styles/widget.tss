@@ -1,0 +1,9 @@
+"#tableView": {
+    separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE,
+    height: Ti.UI.SIZE,
+    top: 0
+}
+
+"#container": {
+    height: Ti.UI.FILL
+}
