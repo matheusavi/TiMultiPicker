@@ -1,46 +1,44 @@
 # TiMultiPicker - IOS
-Desenvolvido como alternativa para o [TiDialogs](https://github.com/dbankier/TiDialogs) para Android, pois necessitava utilizar algo parecido no IOS.
-
-Serve para selecionar vários elementos de uma lista.
+With this widget you can choose multiple options in a list.
 
 
 ## Instruções:
 
-Colocar a pasta br.spyker0.multipicker em /app/widgets/
+Download and put the folder br.spyker0.multipicker in /app/widgets/
 
-Instanciar o widget:
+Instantiate the widget:
 
 ```js
 var multiOptionsPicker = Alloy.createWidget('br.spyker0.multipicker');
 ```
 
-Abrir o widget passando os parâmetros necessários.
+Open the widget passing the needed parameters.
 
 ```js
 multiOptionsPicker.open({
-    title: "Título da tela",
-    options: arrayDeOpcoes, //I.E. [1,2,3,4]
-    selected: arrayDeOpcoesSelecionadas, //I.E. [1,2]
+    title: "Title",
+    options: optionsArray, //I.E. [1,2,3,4]
+    selected: selectedOptionsArray, //I.E. [1,2]
 
-    okButtonTitle: "Ok", //Botão para confirmar a seleção
+    okButtonTitle: "Ok", //Confirm button (IOS)
 
-    cancelButtonTitle: "Voltar", //Botão para cancelar a seleção
+    cancelButtonTitle: "Back", //Cancel button title (IOS)
 
-    navigationWindow: navigationWindow, //Navigation window raiz, a window abrirá dentro dela (por hora isso é obrigatório)
+    navigationWindow: navigationWindow, //Root navigation Window (Needed in IOS)
 
-    okCallback: callbackOk, //callback de confirmação, recebe um objeto contendo uma propriedade selections, que é a lista de itens selecionados
-
-    cancelCallback: callbackCancela //Callback ao cancelar, não recebe parâmetros e não é obrigatório
+    okCallback: callbackOk, //confirmation callback, receives an array with the selected options
+    
+    cancelCallback: callbackCancel //optional
 });
 
 
-//Exemplo de callback
+//callback example
 function callbackOk(e){
     console.log(e.selections);
 }
 ```
 
-Inspirado em :
+Inspired on:
 1. https://github.com/dbankier/TiDialogs/issues/16
 2. https://stackoverflow.com/questions/15145637/titanium-mobile-multiple-select
 3. https://developer.apple.com/library/content/samplecode/TableMultiSelect/Introduction/Intro.html
