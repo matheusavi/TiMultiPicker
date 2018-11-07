@@ -47,7 +47,8 @@ exports.open = function (parametros) {
         var row = Ti.UI.createTableViewRow({
             title: e.rowData.title,
             hasCheck: !e.rowData.hasCheck,
-            backgroundColor: 'white'
+            backgroundColor: 'white',
+            color: 'black'
         });
 
         $.tableView.updateRow(e.index, row, {
@@ -89,5 +90,19 @@ exports.open = function (parametros) {
         });
 
         data.navigationWindow.openWindow($.win);
+    } else {
+        $.save.addEventListener('click', function () {
+            data.okCallback({
+                selections: data.selected
+            });
+            $.win.close();
+        });
+
+        $.win.addEventListener('AndroidBack', function () {
+            data.cancelCallback();
+            $.win.close();
+        });
+
+        $.win.open();
     }
 };

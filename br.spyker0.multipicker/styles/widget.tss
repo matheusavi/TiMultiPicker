@@ -1,9 +1,31 @@
-"#tableView": {
+"#tableView":{
     separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE,
     height: Ti.UI.SIZE,
     top: 0
 }
 
-"#container": {
-    height: Ti.UI.FILL
+"#tableView[platform=android]":{
+	top: 20
+}
+
+"#container":{
+    height: Ti.UI.FILL,
+    layout: 'vertical'
+}
+
+"#title":{
+    top: 20,
+	color: 'white',
+	font: {
+		fontFamily: "Nexa Bold",
+		fontSize: 20
+	}
+}
+
+"#save":{
+	bottom: 2,
+	left: 2,
+	height: 80,
+	width: 80,
+	image: '/images/br.spyker0.multipicker/confirm.png'
 }

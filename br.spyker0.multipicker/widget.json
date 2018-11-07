@@ -3,6 +3,11 @@
 	"name": "br.spyker0.multipicker",
 	"description" : "Simple way to select multiple items from a list",
 	"author": "spyker0",
-	"version": "0.2",
-	"platforms":"ios"
+	"version": "0.1",
+	"platforms":"android,ios",
+	"copyright":"Copyright (c) 2018",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"7.0.0",
+	"tags":""
 }

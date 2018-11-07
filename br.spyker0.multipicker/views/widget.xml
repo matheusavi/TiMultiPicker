@@ -4,5 +4,6 @@
             <Label id="title" platform="android" />
             <TableView id="tableView" />
         </View>
+        <ImageView id="save" zIndex="2" platform="android" />
     </Window>
 </Alloy>
