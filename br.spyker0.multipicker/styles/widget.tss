@@ -27,5 +27,6 @@
 	left: 2,
 	height: 80,
 	width: 80,
-	image: '/images/br.spyker0.multipicker/confirm.png'
+	image: '/images/br.spyker0.multipicker/confirm.png',
+	opacity: 0.5
 }
